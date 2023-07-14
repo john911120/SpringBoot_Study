@@ -62,3 +62,39 @@ ALTER TABLE reply
 	ADD CONTRAINT -- 자동으로 생성되는 외래키의 이름
 	FOREIGN KEY (BOARD_BNO)
 	REFERENCES board(BNO)	
+
+
+-- Movie Table
+Create table movie(
+	mno bigint not null auto_increment,
+	moddate datetime(6),
+	regdate datetime(6),
+	title	varchar(255),
+	primary key(mno)
+) ENGINE = INNODB
+
+CREATE TABLE MOVIE_IMAGE (
+	inum bigint not null auto_increment,
+	img_name varchar(255),
+	path varchar(255),
+	uuid varchar(255),
+	movie_mno bigint,
+	primary key (inum)
+) ENGINE = INNODB
+
+ALTER TABLE MOVIE_IMAGE
+ADD CONSTRAINT -- 외래키 자동 생성
+FOREIGN KEY (MOVIE_MNO)
+REFERENCES MOVIE (MNO)
+
+CREATE TABLE `member` (
+	`email` VARCHAR(255) NOT NULL COLLATE 'utf8_general_ci',
+	`moddate` DATETIME(6) NULL DEFAULT NULL,
+	`regdate` DATETIME(6) NULL DEFAULT NULL,
+	`name` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`password` VARCHAR(255) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`email`) USING BTREE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
