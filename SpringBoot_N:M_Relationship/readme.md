@@ -16,3 +16,5 @@
 상기의 에러 메시지가 나옴.
  <br>
  해결 : List<Object[]> getMovieWithAll( @Param("mno") Long mno); 해당 코드를 추가하여 원인을 해결하였습니다.
+ <br>
+ 
