@@ -4,7 +4,7 @@
 - ajax으로 이미지 파일 및 첨부파일을 업로드하고 영화 엔티티 객체에 처리하는 방법을 학습했습니다.
 - JPA를 통하여 다대다 처리를 하는 방법을 학습하였습니다.
 
-사용한 라이브러리 : thumbnailator(섬네일 이미지 생성 처리 관련 라이브러리), JPA, Thymeleaf, servlet 기반의 파일 첨부
+사용한 라이브러리 : thumbnailator(섬네일 이미지 생성 처리 관련 라이브러리), JPA, Thymeleaf, servlet 기반의 파일 첨부 라이브러리, starrr(별점처리 라이브러리/starrr.js,starrr.css)
 사용한 자바 버전 : Java 11
 사용한 스프링 부트 버전 : 2.7.13
 
