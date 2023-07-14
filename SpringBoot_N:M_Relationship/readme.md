@@ -14,3 +14,5 @@
  <br>
  원인 : 스프링 부트 버전이 업그레이드 됨과 동시에 JPA에서 비즈니스 로직을 담당하는 Repository에 @Query() 어노테이션에 사용하는 메소드 파라미터에 @Param("name")을 지정하지 않아
 상기의 에러 메시지가 나옴.
+ <br>
+ 해결 : List<Object[]> getMovieWithAll( @Param("mno") Long mno); 해당 코드를 추가하여 원인을 해결하였습니다.
