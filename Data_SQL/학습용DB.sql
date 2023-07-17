@@ -98,3 +98,27 @@ CREATE TABLE `member` (
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;
+
+
+-- Club_Member
+create table club_member (
+       email varchar(255) not null,
+        moddate datetime(6),
+        regdate datetime(6),
+        from_social bit not null,
+        name varchar(255),
+        password varchar(255),
+        primary key (email)
+    ) engine=InnoDB
+
+-- club_member_role_set
+    create table club_member_role_set (
+       club_member_email varchar(255) not null,
+        role_set integer
+    ) engine=InnoDB
+
+-- alter table club_membere_role_set
+    alter table club_member_role_set 
+       add constraint FKbfljk8ybtolixxc88osbodrek 
+       foreign key (club_member_email) 
+       references club_member (email)
