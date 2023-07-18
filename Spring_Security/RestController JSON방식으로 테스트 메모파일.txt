@@ -1,0 +1,19 @@
+RestController JSON방식으로 테스트 메모파일
+
+
+http://localhost:8080/notes/
+http://localhost:8080/notes/1
+http://localhost:8080/notes/2
+http://localhost:8080/notes/all?email=user10@zerock.org
+
+{
+"title" : "Test",
+"content":"Test Content",
+"writerEmail":"user10@zerock.org"
+}
+
+{
+"num":2,
+"title":"Update.... Test"
+"content":"Test Content"
+}
