@@ -1,0 +1,6 @@
+$Test Before.......................
+Æ13:49:06.120 [Test worker] INFO org.zerock.club.util.JWTUtil - header={alg=HS256},body={iat=1689655740, exp=1692247740, sub=user10@zerock.org},signature=0RqQrbKtqHxeJKyFfTPmV2tWPvnyJU-ReCZSdBps1AQ
+i13:49:06.129 [Test worker] INFO org.zerock.club.util.JWTUtil - class io.jsonwebtoken.impl.DefaultClaims
+c13:49:06.129 [Test worker] INFO org.zerock.club.util.JWTUtil - ----------------------------------
+•eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2ODk2NTU3NDAsImV4cCI6MTY5MjI0Nzc0MCwic3ViIjoidXNlcjEwQHplcm9jay5vcmcifQ.0RqQrbKtqHxeJKyFfTPmV2tWPvnyJU-ReCZSdBps1AQ
+user10@zerock.org
